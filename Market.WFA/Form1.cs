@@ -19,6 +19,7 @@ namespace Market.WFA
         }
         public MalKabul malKabul;
         public ÜrünSatis urunSatis;
+        public Raporlar raporlar;
 
         private void MalKabulToolStripMenuItem1_Click(object sender, EventArgs e)
         {
@@ -55,6 +56,21 @@ namespace Market.WFA
                 urunSatis.Show();
             }
             else urunSatis.Activate();
+
+        }
+
+        private void rAPORLARToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (raporlar == null || raporlar.IsDisposed)
+            {
+                raporlar = new Raporlar()
+                {
+                    MdiParent = this//parenti bu form dur anlamına geliyorç
+                };
+                raporlar.Show();
+            }
+            else raporlar.Activate();
+
 
         }
     }

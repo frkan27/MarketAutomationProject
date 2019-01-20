@@ -83,6 +83,12 @@
     <Compile Include="Dialog\UrunEkleForm.Designer.cs">
       <DependentUpon>UrunEkleForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Raporlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Raporlar.Designer.cs">
+      <DependentUpon>Raporlar.cs</DependentUpon>
+    </Compile>
     <Compile Include="ÜrünSatis.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,9 @@
     </Compile>
     <EmbeddedResource Include="Dialog\UrunEkleForm.resx">
       <DependentUpon>UrunEkleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Raporlar.resx">
+      <DependentUpon>Raporlar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ÜrünSatis.resx">
       <DependentUpon>ÜrünSatis.cs</DependentUpon>

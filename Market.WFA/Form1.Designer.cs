@@ -78,6 +78,7 @@
             this.rAPORLARToolStripMenuItem.Name = "rAPORLARToolStripMenuItem";
             this.rAPORLARToolStripMenuItem.Size = new System.Drawing.Size(191, 30);
             this.rAPORLARToolStripMenuItem.Text = "RAPORLAR";
+            this.rAPORLARToolStripMenuItem.Click += new System.EventHandler(this.rAPORLARToolStripMenuItem_Click);
             // 
             // ÇıkıştoolStripMenuItem1
             // 
