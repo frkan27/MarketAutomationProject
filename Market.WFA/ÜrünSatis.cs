@@ -36,9 +36,9 @@ namespace Market.WFA
 
         private void SatislariGetir()
         {
-            lstSatıs.Items.Clear();
-            foreach (var satis in satislar)
-            {
+            lstSatıs.Items.Clear();            //secili ürünü satışlar listesine atıyorum.satisviewmodel tipinde tanımladım.
+            foreach (var satis in satislar)    //foreach le satışlar içinde dönüyorum ve bulduklarımı lstsatıslara yazdırıyorum.
+            {                                  //satısviewmodel de nasıl yazdırcağımı override ederek tanımlamıştım.
                 lstSatıs.Items.Add(satis);
             }
         }
@@ -52,6 +52,7 @@ namespace Market.WFA
             nudAlinanPara.Value = 0;
             rbNakit.Checked = false;
             rbKredi.Checked = false;
+            satislar = new List<SatisDetayViewModel>();
 
         }
 
@@ -63,8 +64,8 @@ namespace Market.WFA
         private decimal ToplamHesapla()
         {
             lstSatıs.Items.Clear();
-            foreach (var item in satislar)
-            {
+            foreach (var item in satislar)    //satıslardaki tüm itemleri bulup lstsatıslara ekliyor.
+            {                                  //toplam metoduna bulup işlemleri yapıyor ve label a yazdırıyoruz.
                 lstSatıs.Items.Add(item);
             }
             var toplam = satislar.Sum(x => x.Toplam());
@@ -99,7 +100,6 @@ namespace Market.WFA
                         UrunId=satis.UrunId,
                         Adet=satis.Adet,
                         SatisFiyati=satis.SatisFiyati
-
 
                     });
 
@@ -191,8 +191,8 @@ namespace Market.WFA
                 {
                     satislar.Add(new SatisDetayViewModel()
                     {
-                        UrunId = 0,
-                        UrunAdi = "Peset",
+                        UrunId = 0,//satıslar listeme poşeti ekliyorum.
+                        UrunAdi = "Poset",
                         Adet = (int)nudAdet.Value,
                         SatisFiyati=(decimal)0.25,
                         KDV=0,
@@ -231,7 +231,7 @@ namespace Market.WFA
 
         private void nudPoset_ValueChanged(object sender, EventArgs e)
         {
-            SatisDetayViewModel poset = satislar.Find(x => x.UrunId.Equals(0));
+            SatisDetayViewModel poset = satislar.Find(x => x.UrunId.Equals(0));//satıslar viewmodel olduğundan poşetide öyle tanımlıyorum.
             poset.Adet = (int)nudPoset.Value;
             SatislariGetir();
             ToplamHesapla();
@@ -290,7 +290,7 @@ namespace Market.WFA
                 {
                     satislar.Add(new SatisDetayViewModel()
                     {
-                        UrunId = seciliUrun.UrunId,
+                        UrunId = seciliUrun.UrunId,//secili ürünün bilgilerini satısdetayviewmodel tipinde satıslar listeme ekliyorum.
                         İndirim = seciliUrun.Indirim,
                         KDV = new KategoriRepo().GetById(seciliUrun.KategoriId).KDV,
                         Adet = (int)nudAdet.Value,
@@ -301,9 +301,9 @@ namespace Market.WFA
                     seciliUrun.Stok -= (int)nudAdet.Value;
                     new UrunRepo().Update();
                 }
-                ToplamHesapla();
-                nudAdet.Value = 1;
-                    
+                ToplamHesapla();   //her ürün seçip enter a bastığımızda yukarıda işlemleri yapıyor.(satıslar listesine ekleme filan.)
+                nudAdet.Value = 1; //bunun sonucunda yeni ürün eklendiğinden tekrar son fiyatı toplamamız lazım.
+                                   //bu yüzden ToplamHesapla() metodunu çağırırız.
 
 
 

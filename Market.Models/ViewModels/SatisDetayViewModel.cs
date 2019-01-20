@@ -33,12 +33,6 @@ namespace Market.Models.ViewModels
             }
             return $"{UrunAdi,-30} x {Adet,-6} %{KDV,-6} {Toplam():c2}";
 
-           
-           
-
-
-
-
 
         }
 

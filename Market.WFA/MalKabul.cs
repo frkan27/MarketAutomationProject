@@ -43,8 +43,8 @@ namespace Market.WFA
                     var urunler = new UrunRepo().GetAll(x => x.KategoriId == kategori.KategoriId).ToList();
                     foreach (var urun in urunler)
                     {
-                        TreeNode subnode = new TreeNode(urun.UrunAdi);
-                        subnode.ContextMenuStrip = cmsÜrünİşlemleri;
+                        TreeNode subnode = new TreeNode(urun.UrunAdi);//treenode urunadı yazsın diye böyle ekliyoruz.
+                        subnode.ContextMenuStrip = cmsÜrünİşlemleri;   //Bunun için Urun classında overrride etmemiz lazım.
                         subnode.Tag = urun.UrunId;
                         node.Nodes.Add(subnode);
 
