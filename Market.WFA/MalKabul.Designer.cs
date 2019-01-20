@@ -54,7 +54,7 @@
             // 
             this.txtAra.Location = new System.Drawing.Point(41, 50);
             this.txtAra.Name = "txtAra";
-            this.txtAra.Size = new System.Drawing.Size(145, 20);
+            this.txtAra.Size = new System.Drawing.Size(298, 20);
             this.txtAra.TabIndex = 0;
             this.txtAra.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtAra_KeyUp);
             // 
@@ -62,15 +62,15 @@
             // 
             this.tvUrunler.Location = new System.Drawing.Point(41, 76);
             this.tvUrunler.Name = "tvUrunler";
-            this.tvUrunler.Size = new System.Drawing.Size(145, 259);
+            this.tvUrunler.Size = new System.Drawing.Size(298, 362);
             this.tvUrunler.TabIndex = 1;
             this.tvUrunler.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tvUrunler_AfterSelect);
             // 
             // btnBarkodoku
             // 
-            this.btnBarkodoku.Location = new System.Drawing.Point(211, 50);
+            this.btnBarkodoku.Location = new System.Drawing.Point(386, 47);
             this.btnBarkodoku.Name = "btnBarkodoku";
-            this.btnBarkodoku.Size = new System.Drawing.Size(142, 47);
+            this.btnBarkodoku.Size = new System.Drawing.Size(167, 62);
             this.btnBarkodoku.TabIndex = 2;
             this.btnBarkodoku.Text = "Barkod Oku";
             this.btnBarkodoku.UseVisualStyleBackColor = true;
@@ -79,7 +79,7 @@
             // lblBilgler
             // 
             this.lblBilgler.AutoSize = true;
-            this.lblBilgler.Location = new System.Drawing.Point(208, 119);
+            this.lblBilgler.Location = new System.Drawing.Point(383, 135);
             this.lblBilgler.Name = "lblBilgler";
             this.lblBilgler.Size = new System.Drawing.Size(37, 13);
             this.lblBilgler.TabIndex = 3;
@@ -88,33 +88,36 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(516, 46);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Location = new System.Drawing.Point(646, 47);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 13);
+            this.label2.Size = new System.Drawing.Size(124, 24);
             this.label2.TabIndex = 4;
             this.label2.Text = "Kategori Adı";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(551, 91);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Location = new System.Drawing.Point(719, 92);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(29, 13);
+            this.label3.Size = new System.Drawing.Size(51, 24);
             this.label3.TabIndex = 5;
             this.label3.Text = "KDV";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(557, 136);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.Location = new System.Drawing.Point(729, 135);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(23, 13);
+            this.label4.Size = new System.Drawing.Size(41, 24);
             this.label4.TabIndex = 6;
             this.label4.Text = "Kar";
             // 
             // txtKategoriAdi
             // 
-            this.txtKategoriAdi.Location = new System.Drawing.Point(614, 43);
+            this.txtKategoriAdi.Location = new System.Drawing.Point(776, 51);
             this.txtKategoriAdi.Name = "txtKategoriAdi";
             this.txtKategoriAdi.Size = new System.Drawing.Size(120, 20);
             this.txtKategoriAdi.TabIndex = 7;
@@ -127,7 +130,7 @@
             0,
             0,
             131072});
-            this.nudKDV.Location = new System.Drawing.Point(614, 92);
+            this.nudKDV.Location = new System.Drawing.Point(776, 92);
             this.nudKDV.Maximum = new decimal(new int[] {
             1,
             0,
@@ -145,7 +148,7 @@
             0,
             0,
             131072});
-            this.nudKar.Location = new System.Drawing.Point(614, 136);
+            this.nudKar.Location = new System.Drawing.Point(776, 135);
             this.nudKar.Maximum = new decimal(new int[] {
             1,
             0,
@@ -157,9 +160,9 @@
             // 
             // btnEkle
             // 
-            this.btnEkle.Location = new System.Drawing.Point(485, 203);
+            this.btnEkle.Location = new System.Drawing.Point(564, 194);
             this.btnEkle.Name = "btnEkle";
-            this.btnEkle.Size = new System.Drawing.Size(75, 23);
+            this.btnEkle.Size = new System.Drawing.Size(111, 77);
             this.btnEkle.TabIndex = 10;
             this.btnEkle.Text = "Ekle";
             this.btnEkle.UseVisualStyleBackColor = true;
@@ -167,9 +170,9 @@
             // 
             // btnGüncelle
             // 
-            this.btnGüncelle.Location = new System.Drawing.Point(576, 203);
+            this.btnGüncelle.Location = new System.Drawing.Point(713, 194);
             this.btnGüncelle.Name = "btnGüncelle";
-            this.btnGüncelle.Size = new System.Drawing.Size(75, 23);
+            this.btnGüncelle.Size = new System.Drawing.Size(111, 77);
             this.btnGüncelle.TabIndex = 11;
             this.btnGüncelle.Text = "Güncelle";
             this.btnGüncelle.UseVisualStyleBackColor = true;
@@ -177,9 +180,9 @@
             // 
             // btnSil
             // 
-            this.btnSil.Location = new System.Drawing.Point(670, 203);
+            this.btnSil.Location = new System.Drawing.Point(869, 194);
             this.btnSil.Name = "btnSil";
-            this.btnSil.Size = new System.Drawing.Size(75, 23);
+            this.btnSil.Size = new System.Drawing.Size(111, 77);
             this.btnSil.TabIndex = 12;
             this.btnSil.Text = "Sil";
             this.btnSil.UseVisualStyleBackColor = true;
@@ -196,14 +199,14 @@
             // silToolStripMenuItem
             // 
             this.silToolStripMenuItem.Name = "silToolStripMenuItem";
-            this.silToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.silToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.silToolStripMenuItem.Text = "Sil";
             this.silToolStripMenuItem.Click += new System.EventHandler(this.silToolStripMenuItem_Click);
             // 
             // güncelleToolStripMenuItem
             // 
             this.güncelleToolStripMenuItem.Name = "güncelleToolStripMenuItem";
-            this.güncelleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.güncelleToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.güncelleToolStripMenuItem.Text = "Güncelle";
             this.güncelleToolStripMenuItem.Click += new System.EventHandler(this.güncelleToolStripMenuItem_Click);
             // 
@@ -211,7 +214,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(992, 450);
             this.Controls.Add(this.btnSil);
             this.Controls.Add(this.btnGüncelle);
             this.Controls.Add(this.btnEkle);

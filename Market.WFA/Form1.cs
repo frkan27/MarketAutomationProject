@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Market.BLL.HazirData;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -40,7 +41,7 @@ namespace Market.WFA
 
         private void AnaSayfa_Load(object sender, EventArgs e)
         {
-
+            new HazirData().VeriÜret();
         }
 
         private void SatışlarToolStripMenuItem_Click(object sender, EventArgs e)
