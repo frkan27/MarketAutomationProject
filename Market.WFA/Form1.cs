@@ -17,6 +17,7 @@ namespace Market.WFA
             InitializeComponent();
         }
         public MalKabul malKabul;
+        public ÜrünSatis urunSatis;
 
         private void MalKabulToolStripMenuItem1_Click(object sender, EventArgs e)
         {
@@ -39,6 +40,20 @@ namespace Market.WFA
 
         private void AnaSayfa_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void SatışlarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (urunSatis == null || urunSatis.IsDisposed)
+            {
+                urunSatis = new ÜrünSatis()
+                {
+                    MdiParent = this,
+                };
+                urunSatis.Show();
+            }
+            else urunSatis.Activate();
 
         }
     }

@@ -64,6 +64,7 @@
             this.SatışlarToolStripMenuItem.Name = "SatışlarToolStripMenuItem";
             this.SatışlarToolStripMenuItem.Size = new System.Drawing.Size(191, 30);
             this.SatışlarToolStripMenuItem.Text = "SATIŞLAR";
+            this.SatışlarToolStripMenuItem.Click += new System.EventHandler(this.SatışlarToolStripMenuItem_Click);
             // 
             // MalKabulToolStripMenuItem1
             // 

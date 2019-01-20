@@ -80,6 +80,12 @@
     <Compile Include="Dialog\UrunEkleForm.Designer.cs">
       <DependentUpon>UrunEkleForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ÜrünSatis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ÜrünSatis.Designer.cs">
+      <DependentUpon>ÜrünSatis.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Dialog\BarkodOkuma.resx">
       <DependentUpon>BarkodOkuma.cs</DependentUpon>
     </EmbeddedResource>
@@ -101,6 +107,9 @@
     </Compile>
     <EmbeddedResource Include="Dialog\UrunEkleForm.resx">
       <DependentUpon>UrunEkleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ÜrünSatis.resx">
+      <DependentUpon>ÜrünSatis.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
