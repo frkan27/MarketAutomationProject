@@ -81,6 +81,7 @@
             this.txtBarkod.Name = "txtBarkod";
             this.txtBarkod.Size = new System.Drawing.Size(133, 20);
             this.txtBarkod.TabIndex = 2;
+            this.txtBarkod.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBarkod_KeyDown);
             // 
             // nudAdet
             // 
@@ -98,13 +99,16 @@
             0,
             0,
             0});
+            this.nudAdet.ValueChanged += new System.EventHandler(this.nudAdet_ValueChanged);
             // 
             // nudPoset
             // 
+            this.nudPoset.Enabled = false;
             this.nudPoset.Location = new System.Drawing.Point(226, 263);
             this.nudPoset.Name = "nudPoset";
             this.nudPoset.Size = new System.Drawing.Size(57, 20);
             this.nudPoset.TabIndex = 4;
+            this.nudPoset.ValueChanged += new System.EventHandler(this.nudPoset_ValueChanged);
             // 
             // cbPoset
             // 
@@ -115,6 +119,7 @@
             this.cbPoset.TabIndex = 5;
             this.cbPoset.Text = "Poset";
             this.cbPoset.UseVisualStyleBackColor = true;
+            this.cbPoset.CheckedChanged += new System.EventHandler(this.cbPoset_CheckedChanged);
             // 
             // gbOdemeTipi
             // 
@@ -182,6 +187,7 @@
             this.nudAlinanPara.Name = "nudAlinanPara";
             this.nudAlinanPara.Size = new System.Drawing.Size(57, 20);
             this.nudAlinanPara.TabIndex = 4;
+            this.nudAlinanPara.ValueChanged += new System.EventHandler(this.nudAlinanPara_ValueChanged);
             // 
             // label1
             // 
@@ -263,8 +269,9 @@
             // silToolStripMenuItem
             // 
             this.silToolStripMenuItem.Name = "silToolStripMenuItem";
-            this.silToolStripMenuItem.Size = new System.Drawing.Size(86, 22);
+            this.silToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.silToolStripMenuItem.Text = "Sil";
+            this.silToolStripMenuItem.Click += new System.EventHandler(this.silToolStripMenuItem_Click);
             // 
             // ÜrünSatis
             // 

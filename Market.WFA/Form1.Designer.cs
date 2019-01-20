@@ -102,6 +102,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "AnaSayfa";
             this.Text = "Ana Sayfa";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.AnaSayfa_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
