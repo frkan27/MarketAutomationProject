@@ -108,6 +108,7 @@
             this.btnStok.TabIndex = 1;
             this.btnStok.Text = "Excel";
             this.btnStok.UseVisualStyleBackColor = true;
+            this.btnStok.Click += new System.EventHandler(this.btnStok_Click);
             // 
             // dgvStok
             // 
@@ -149,6 +150,7 @@
             this.cbGunluk.TabIndex = 5;
             this.cbGunluk.Text = "Kategorilere Göre";
             this.cbGunluk.UseVisualStyleBackColor = true;
+            this.cbGunluk.CheckedChanged += new System.EventHandler(this.cbGunluk_CheckedChanged);
             // 
             // dtpTarih
             // 
@@ -167,6 +169,7 @@
             this.btnGunluk.TabIndex = 3;
             this.btnGunluk.Text = "Excel";
             this.btnGunluk.UseVisualStyleBackColor = true;
+            this.btnGunluk.Click += new System.EventHandler(this.btnGunluk_Click);
             // 
             // dgvGunluk
             // 
@@ -229,6 +232,7 @@
             this.cmbAylar.Name = "cmbAylar";
             this.cmbAylar.Size = new System.Drawing.Size(121, 21);
             this.cmbAylar.TabIndex = 8;
+            this.cmbAylar.SelectedIndexChanged += new System.EventHandler(this.cmbAylar_SelectedIndexChanged);
             // 
             // cmbYillarAylik
             // 
@@ -237,6 +241,7 @@
             this.cmbYillarAylik.Name = "cmbYillarAylik";
             this.cmbYillarAylik.Size = new System.Drawing.Size(121, 21);
             this.cmbYillarAylik.TabIndex = 7;
+            this.cmbYillarAylik.SelectedIndexChanged += new System.EventHandler(this.cmbYillarAylik_SelectedIndexChanged);
             // 
             // cbAylar
             // 
@@ -248,6 +253,7 @@
             this.cbAylar.TabIndex = 6;
             this.cbAylar.Text = "Kategorilere Göre";
             this.cbAylar.UseVisualStyleBackColor = true;
+            this.cbAylar.CheckedChanged += new System.EventHandler(this.cbAylar_CheckedChanged);
             // 
             // btnAylikExcel
             // 
@@ -258,6 +264,7 @@
             this.btnAylikExcel.TabIndex = 3;
             this.btnAylikExcel.Text = "Excel";
             this.btnAylikExcel.UseVisualStyleBackColor = true;
+            this.btnAylikExcel.Click += new System.EventHandler(this.btnAylikExcel_Click);
             // 
             // dgvAylik
             // 
@@ -307,6 +314,7 @@
             this.cmbYillar.Name = "cmbYillar";
             this.cmbYillar.Size = new System.Drawing.Size(121, 21);
             this.cmbYillar.TabIndex = 10;
+            this.cmbYillar.SelectedIndexChanged += new System.EventHandler(this.cmbYillar_SelectedIndexChanged);
             // 
             // cbYillar
             // 
@@ -318,6 +326,7 @@
             this.cbYillar.TabIndex = 9;
             this.cbYillar.Text = "Kategorilere Göre";
             this.cbYillar.UseVisualStyleBackColor = true;
+            this.cbYillar.CheckedChanged += new System.EventHandler(this.cbYillar_CheckedChanged);
             // 
             // btnYillikExcel
             // 
@@ -328,6 +337,7 @@
             this.btnYillikExcel.TabIndex = 7;
             this.btnYillikExcel.Text = "Excel";
             this.btnYillikExcel.UseVisualStyleBackColor = true;
+            this.btnYillikExcel.Click += new System.EventHandler(this.btnYillikExcel_Click);
             // 
             // dgvYillikSatislar
             // 
@@ -377,6 +387,7 @@
             this.rbKredi.TabStop = true;
             this.rbKredi.Text = "Kredi Kartı";
             this.rbKredi.UseVisualStyleBackColor = true;
+            this.rbKredi.CheckedChanged += new System.EventHandler(this.rbKredi_CheckedChanged);
             // 
             // rbNakit
             // 
@@ -389,6 +400,7 @@
             this.rbNakit.TabStop = true;
             this.rbNakit.Text = "Nakit";
             this.rbNakit.UseVisualStyleBackColor = true;
+            this.rbNakit.CheckedChanged += new System.EventHandler(this.rbNakit_CheckedChanged);
             // 
             // label4
             // 
@@ -409,6 +421,7 @@
             this.btnOdemeYonExcel.TabIndex = 13;
             this.btnOdemeYonExcel.Text = "Excel";
             this.btnOdemeYonExcel.UseVisualStyleBackColor = true;
+            this.btnOdemeYonExcel.Click += new System.EventHandler(this.btnOdemeYonExcel_Click);
             // 
             // dgvOdemeYontemi
             // 
