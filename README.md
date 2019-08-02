@@ -11,7 +11,8 @@ Mal Kabul kısmında her ürünün kendisine ait bir kategorisi bulunmaktadır. 
 **Projeyi çalıştırmadan önce,**
 > - Solution'a sağ tıklayarak Restore NuGet Packages'i tıklayarak, projede kullanılan paketleri yükleyin.
 > - NuGet Package Manager Console'da Default Project'i Market.DAL yapın ve **update-database** komutunu girerek projenin kullanılacağı veritabanını oluşturun.
-**Kullanılan Teknolojiler**
+
+## Kullanılan Teknolojiler
 
 > -   NTier Project Pattern
 > -   Repository Entity Pattern
