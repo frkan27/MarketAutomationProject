@@ -1,27 +1,21 @@
-Entity Framework - Code First Bitirme projesi
-=========================
-Barkod numarası ile Ürün Alış,Satış,Stok kontrollerinin yapıldığı, günlük, aylık, yıllık raporların görüntelendiği bir form uygulaması.
+# **Market Otomasyonu**
+Ürünlerin mal kabulünün ve satışının gerçekleştirildiği, stok ve satış bilgisinin izlenebildiği bir Windows Forms uygulaması.
 
-----------
-### Öngereklilikler
+Mal Kabul kısmında her ürünün kendisine ait bir kategorisi bulunmaktadır. Bir ürünün tanımı yapıldıktan sonra, tekrar aynı ürün eklenecekse, olan ürünün stoğuna ekleme yapılır. Rapor kısmında ürün veya kategori bazlı satışlar günlük, aylık ve yıllık olarak izlenebilmektedir.
 
-> - Visual Studio 2017
-> - Sql Server 2014 Local Db
-> - .Net Framework ^4.5
- ----------
+## Öngereklilikler
 
-### Repository'yi indirdikten sonra
+>  - Visual Studio 2017
+>   - SQL Server 2017 LocalDB
+>   - .Net Framework 4.5 (en az)
+**Projeyi çalıştırmadan önce,**
+> - Solution'a sağ tıklayarak Restore NuGet Packages'i tıklayarak, projede kullanılan paketleri yükleyin.
+> - NuGet Package Manager Console'da Default Project'i Market.DAL yapın ve **update-database** komutunu girerek projenin kullanılacağı veritabanını oluşturun.
+**Kullanılan Teknolojiler**
 
-> **1)** Solution'ı sağ tıklayıp **Restore Nuget Packages**'i tıklayınız
-----------
+> -   NTier Project Pattern
+> -   Repository Entity Pattern
+> -   EntityFramework Code First
+> -   Windows Forms
+> -   iTextSharp (Satış bilgisini, yani fişi PDF olarak yazdırmak için)
 
-> **2)** *Nuget Package Manager Console*'dan Default Project'i Market.DAL yaptıktan sonra "**update-database**" komutunu çalıştırınız.
-> > **2-a)** Hata vermesi durumunda "**Rebuilt Solution**" yapıp projeyi kapatıp tekrar açabilirsiniz.
-## Kullanılan Teknolojiler ##
-
- - N-Tier Project Pattern
- - Repository Entity Pattern
- - Entity Framework 
- - Code First
-
-> 
